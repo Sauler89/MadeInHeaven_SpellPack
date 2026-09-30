@@ -1,16 +1,14 @@
-# Made in Heaven - Spell Pack
-A spell pack for Baldur's Gate 1 and Baldur's Gate 2.
+# Made in Heaven - Spell Pack Lite
+A lightweight three-component fork of Made in Heaven - Spell Pack for Baldur's Gate 1 and Baldur's Gate 2.
 
 
 ## Introduction
 
-This mod installs various new spells and other class abilities into the game,
-most are straight from the Player's Handbook or official Forgotten Realms
-sources, with a few more original creations.
+This Lite fork keeps only the Arcane Spellpack, Divine Spellpack and Planescape Torment Spellpack from Angel's original Made in Heaven - Spell Pack. The original spell content and credits are preserved, while the installer is intentionally reduced to these three components.
 
 ## Component list
 
-This fork intentionally exposes only the three spell-pack components used by the custom build:
+Made in Heaven - Spell Pack Lite intentionally exposes only these three spell-pack components:
 
 - Arcane Spellpack  - Original wizard/sorcerer/bard spells by Angel.
 - Divine Spellpack  - Original cleric/druid/shaman spells by Angel.
@@ -26,10 +24,13 @@ This build also includes the Infinity UI++ compatibility fix that filters SFO cl
 
 For detailed descriptions, please check the docs directory.
 
+Original mod by Angel. Lite fork maintained by Sauler89.
+
 
 ## Version History
 
-v9-personal-3components-iui-fix2 - September 30 2026
+v9-lite-iui-fix2 - September 30 2026
+- Renamed the custom fork to Made in Heaven - Spell Pack Lite and synchronized package metadata/documentation.
 - Custom three-component fork: Arcane Spellpack, Divine Spellpack, PST Spellpack only.
 - Preserved original WeiDU component IDs #0, #2 and #4.
 - Added Infinity UI++ compatibility filtering for SFO {K=...,C=...} class/kit metadata.

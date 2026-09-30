@@ -2,615 +2,78 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Made in Heaven: Spell Pack</title>
+<title>Made in Heaven - Spell Pack Lite</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" href="style/g3readme.css" type="text/css" />
 <link href="style/g3icon.ico" rel="icon" type="image/bmp" />
 </head>
 <body>
-<h1>Made in Heaven: Spell Pack</h1>
+<h1>Made in Heaven - Spell Pack Lite</h1>
+
 <div class="section">
-  <p><strong><a href="http://www.gibberlings3.net/">A Gibberlings Three Mod</a></strong> <br/>
-    <strong>Author</strong>: <a href="http://gibberlings3.net/forums/index.php?showuser=6180">Angel</a> </p>
-<!--  <p><strong>On the web: </strong><a href="http://www.gibberlings3.net/npcstrongholds/"><strong>Home page</strong></a> and <a href="http://gibberlings3.net/forums/index.php?showforum=77"><strong>discussion forum</strong></a></p> -->
-  <p><strong>Version 9 - <a href="https://github.com/AngelGryph/MadeInHeaven_SpellPack/releases/">Check for the most recent version</a></strong> <br/>
-    <strong>Languages: </strong>English <br/>
-    <strong>Platforms: </strong>Windows, Mac OS X, and Linux </p>
+  <p><strong>Original mod author:</strong> Angel<br/>
+  <strong>Lite fork maintainer:</strong> Sauler89<br/>
+  <strong>Version:</strong> v9-lite-iui-fix2<br/>
+  <strong>Languages:</strong> English<br/>
+  <strong>Platforms:</strong> Windows, Mac OS X, and Linux</p>
+  <p><strong>Repository:</strong> <a href="https://github.com/Sauler89/MadeInHeaven_SpellPack">Sauler89/MadeInHeaven_SpellPack</a></p>
 </div>
+
 <h2>Overview</h2>
 <div class="section">
-  <p>This is my spell pack for Baldur's Gate 1 and -2.  It introduces several new arcane and divine spells to the game, as well as some new options for paladins.</p>
+  <p>Made in Heaven - Spell Pack Lite is a reduced fork of Angel's Made in Heaven - Spell Pack. It intentionally keeps only the three spell-pack components used by this build while preserving their original content and WeiDU component numbers.</p>
+  <ul>
+    <li><strong>#0 Arcane Spellpack</strong> - Original wizard, sorcerer and bard spells.</li>
+    <li><strong>#2 Divine Spellpack</strong> - Original cleric, druid and shaman spells.</li>
+    <li><strong>#4 Planescape Torment Spellpack</strong> - A selection of spells from Planescape: Torment.</li>
+  </ul>
+  <p>The Lite build also contains the custom Infinity UI++ compatibility fix that prevents SFO class/kit metadata such as <code>{K=...,C=...}</code> from leaking into Infinity UI++ class-level displays.</p>
 </div>
+
 <h2>Compatibility</h2>
 <div class="section">
-  <p>This mod has been designed to work with <acronym title="Baldur's Gate Enhanced Edition">BGEE</acronym>, <acronym title="Baldur's Gate 2 Enhanced Edition">BG2EE</acronym> and should be backwards compatible with <acronym title="Baldur's Gate 2: Throne of Bhaal">BG2: ToB</acronym>.  The mega-mods <acronym title="Enhanced Edition Trilogy">EET</acronym> and <acronym title="Baldur's Gate Trilogy">BGT</acronym> are also supported.  This mod is not compatible with older versions of the games.
-  <p>As a WeiDU mod, this mod should be compatible with all other WeiDU mods.  The core components have no known compatibility issues with any mods.  The tweaks might conflict with other mods that do similar things, like Spell Revisions.  As a spell pack, this mod should be installed fairly early, before any 'tweak' mods.</p>
+  <p>The supported game targets are inherited from the original components: BGEE, BG2EE, EET, classic BG2: ToB and BGT where allowed by the component installer.</p>
+  <p>The technical mod folder remains <code>mih_sp</code> and the original component IDs #0, #2 and #4 are preserved for WeiDU log, reinstall and uninstall compatibility with the previous custom three-component build.</p>
 </div>
+
 <h2>Installation</h2>
 <div class="section">
-  <p><strong>Before you install</strong><br/>
-  If you have an older version of the MiH Spell Pack, be sure to completely remove it first before trying to install the new version!</p>
-  <p><strong>Vanilla BG2 and Baldur's Gate Trilogy</strong><br/>
-  <b>THIS MOD IS DEVELOPED ON ENHANCED EDITION AND NOT FREQUENTLY TESTED ON THE OLD ENGINE</b><br/>
-  Before installing this mod, you must install the latest official patch, and you must also install the Throne of Bhaal Extender (ToBEx) and the G3 Fixpack version 11 or higher.  This mod will not work correctly without those two installed!</p>
-  <p><strong>BG1EE and Siege of Dragonspear</strong><br/>
-  If you obtained your version of the game through Steam or GoG, you must either run a 'modmerge' or install 'A7-DlcMerger' before installing this mod (or any WeiDU-based mods, really).  If you obtained your game from Beamdog, this is not required.</p>
-  <p><strong>BG2EE and Extended Edition Trilogy</strong><br/>
-  There are no requirements at this time.  For EET, install this mod after EET has been installed but before the EET installation is finalized.</p>
-  <p><strong>Windows</strong><br/>
-Made in Heaven: Spell Pack is packaged and installed with WeiDU and is distributed as a zip archive.  Modern versions of Windows have support for zip files built in, just double-click the archive to open it, and extract the contents to your game file.  If you are still using an older version of Windows, you should install WinZip or a similar program to extract the archive.</p>
-  <p>Your game folder should then contain a mih_sp folder and setup-mih_sp.exe. To install, double-click setup-mih_sp.exe and follow the instructions on screen.</p>
-  <p>Please run setup-mih_sp.exe in your game folder to reinstall, uninstall, or otherwise change components.  To uninstall the entire mod without questions, run setup-mih_sp.exe --uninstall from a command line in your game directory.</p>
-  <p><strong>Mac OS X</strong><br/>
-    Made in Heaven: Spell Pack is packaged and installed with WeiDU and is distributed as a compressed archive.  Extract the contents of the archive and move them to your game folder. Your game folder should then contain a mih_sp folder, setup-mih_sp, and setup-mih_sp.command. To install, simply double-click <strong>setup-mih_sp.command</strong> and follow the instructions on screen.</p>
-  <p><strong>Linux</strong><br/>
-    Extract the contents of the mod archive to your game installation directory.</p>
-  <p>If you haven't already, download the latest version of WeiDU for Linux from <a href="http://www.weidu.org/%7Ethebigg/" title="External link" rel="nofollow external">weidu.org</a> and extract (at least) the weidu executable to a $PATH directory (e.g. /usr/bin).</p>
-  <p>To install, open a terminal, cd to your game installation directory and
- run <strong>weidu --log setup-mih_sp.debug mih_sp/setup-mih_sp.tp2</strong> from your game installation directory to install or uninstall the mod.</p>
-  <p>Note: The readme files of some older mods recommend running tolower on Linux prior to installation.  <b>Don't do this on an Enhanced Edition game, you will break it!</b>  Modern versions of tolower will actually refuse to run in a EE game directory.  At any rate, the contents of MiH: Spell Pack are already all lower case, there is no need for tolower.</p>
-  <p><strong>New Game required!</strong><br/>
-  After installing this mod you must start a new game.  This mod edits area files and stores, both of which are stored in your save game after you have visited them.  Continuing a saved game after installing this mod will have unexpected and likely undesired results.</p>
+  <p>Extract the archive into the game directory so that the <code>mih_sp</code> folder and <code>setup-mih_sp</code> installer are placed next to the game executable, then run the installer normally.</p>
+  <p>If replacing an older custom build, use the same <code>setup-mih_sp</code> installer so WeiDU can recognize the preserved component IDs.</p>
 </div>
-<h2>Component Descriptions</h2>
+
+<h2>Components</h2>
 <div class="section">
-  <h3>Core Components</h3>
-  <p>This mod consists of several components, each of which can be installed or removed independently from the others.<p>
+  <h3>#0 - Arcane Spellpack</h3>
+  <p>Adds the original Made in Heaven wizard, sorcerer and bard spells. See <a href="arcane_spell_list.html">the full Arcane Spell List</a>.</p>
 
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Made in Heaven: Arcane Spellpack</h1></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Arcane_Spellpack</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_arcane_spellpack.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues at this time.</td></th>
-    <tr><th>Design Notes</th><td><ul>
-        <li>Includes Lore-friendly Changes.</li>
-	<li>The use of <i>Fool's Gold</i> can be detected with the global variables MH#FOOLS_GOLD and MH#FOOLS_GOLD_DETECTED.</i>
-      </ul></td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This installs new spells for wizards, sorcerers and bards.  The spells will be available on the selection screen when creating a new character, and spell scrolls are distributed throughout the environment.</p>
-  <ul>
-    <h6>First Circle</h6>
-    <li>Frost Fingers - Like burning hands, but cold.</li>
-    <li>Barrier - Wizard version of Armor of Faith.</li>
-    <h6>Second Circle</h6>
-    <li>Spark Shower - 4d4+ electrical damage in a small area.</li>
-    <li>Seeking - Ally gets +4 to hit with ranged attacks.</li>
-    <li>Summon Cats - Calls upon some feline allies.</li>
-    <li>Threestones - Like Melf's Minute Meteors, but no fire.</li>
-    <li>Fool's Gold - Creates illusionary gold pieces.  Can get you in trouble with law enforcement!</li>
-    <h6>Third Circle</h6>
-    <li>Improved Magic Missile - Literally goes up to eleven!</li>
-    <li>Heroism - Like the potion, but it's a spell.</li>
-    <li>Blink - I'm here! No, here!  No, here!  Over here!</li>
-    <li>Scintillating Sphere - Lightning version of Fireball.</li>
-    <li>Minor Malison - Like Greater Malison, but less so.  They stack.</li>
-    <li>Gust of Wind - Blow you away!  Gets rid of pesky clouds too.</li>
-    <li>Alacrity - The non-improved version.  +2 casting speed.</li>
-    <h6>Fourth Circle</h6>
-    <li>Iron Maiden - Make your own battle horror!</li>
-    <li>Slumber - Like Sleep, but better.</li>
-    <li>Rary's Mnemonic Enhancer - Recalls some lower level spells.</li>
-    <li>Evards Black tentacles - An Entangle that hurts.</li>
-    <h6>Fifth Circle</h6>
-    <li>Superheroism - Like heroism, but with more courage.</li>
-    <li>Simbul's Spell Matrix - Holds two 3rd circle spells.</li>
-    <li>Ramazith's Slime Summons - Calls oozes, slimes and blobs.</li>
-    <li>Snilloc's Major Missile - Stronger person of Magic Missile.</li>
-    <li>Presper's Moonbow - Electrical version of Melf's Meteors.</li>
-    <h6>Sixth Circle</h6>
-    <li>Mordenkainen's Lucubration - Recalls some lower spells.</li>
-    <li>Mirage Arcana - Mirror Image on the entire party.</li>
-    <h6>Seventh Circle</h6>
-    <li>Summon Dao - Just like a Djinn or Efreet, but earthier.</li>
-    <li>Summon Marid - Just like a Djinn or Efreet, but wetter.</li>
-    <li>Faerie Sword - Summons a powerful magical sword.</li>
-    <li>Doom Legion - Creates some skeleton warriors.</li>
-    <li>Mordenkainen's Magnificent Mansion - Kinda like the pocket plane.</li>
-    <h6>Eighth Circle</h6>
-    <li>Major Globe of Invulnerability - Blocks up to 5th circle spells.</li>
-    <li>Polar Ray - 16d8+ cold damage on a target.</li>
-    <li>Mass Charm - Charm a lot of persons.</li>
-    <li>Shooting Stars - Melf's Minute Meteors' big brother.</li>
-    <li>Devastate - Lowers AC, saving throws and elemental resistances.</li>
-    <li>Lightning Ring - Retaliates on attackers with lightning.</li>
-    <li>Avissar's Flaming Weapon - Add fire damage to melee attacks.</li>
-    <h6>Ninth Circle</h6>
-    <li>Weird - Summons some Minor Deaths on the enemy.</li>
-    <li>Foresight - +2 AC and saves, immune to backstab, lasts a long time.</li>
-    <li>Khelben's Dweomerdoom - Erases enemy spells before they cast them.</li>
-  </ul>
-  <p><a href="arcane_spell_list.html">Full Arcane Spell List</a></p>
-  <p><i>Ramazith's Slime Summons</i> is an original creation by me.  All other spells are from the 2e PHB or official FR source books.</p>
-  <p>Note: This component makes several changes to better match the game to known Forgotten Realms lore.  This can be turned off in the ini file if you really want to, but some things will then look strange.</p>
-  <p>Note: Ninth level spell slots are actually fairly limited because the game also puts HLAs and a bunch of BS carried over from TotSC there.  This may make some spells unlearnable by sorcerers, although wizards can learn it from scrolls just fine.  For the EE games, the SFO library I use will try to solve this with some lua magic, but that option does not exist for the older games.  I have experimental code that will try to free up more 9th level slots, but it is untested and thus disabled by default.  See the ini file if you want to check it out.</p>
-</td></tr></table>
+  <h3>#2 - Divine Spellpack</h3>
+  <p>Adds the original Made in Heaven cleric, druid and shaman spells. See <a href="divine_spell_list.html">the full Divine Spell List</a>.</p>
 
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Icewind Dale: Arcane Spellpack (CamDawg/DavidW)</h1></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-IWD_Arcane_Spells</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#iwdspells_arcane.mrk (this version)<br>weidu_external/markers/dw_iwdspells_arcane_installed.mrk (any version)</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, EET, BG2, BGT</td></tr>
-    <tr><th>Mod Compatibility</th><td>Same code base as IWDification and SCS, use any of these three.</td></th>
-    <tr><th>Design Notes</th><td>Provided by CamDawg and DavidW. Please report bugs to IWDification.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This installs arcane spells from Icewind Dale into BG1/BG2.  This uses the IWDspells libary provided by CamDawg and DavidW, and as such is exactly the same component as found in CamDawg's IWDificiation and DavidW's Sword Coast Stratagems.  If Icewind Dale arcane spells from either of these are already installed, this component will do nothing other than print a message but still count as installed.</p>
-  <p>For the spell list, check <a href="https://www.gibberlings3.net/subpages/iwdification/arcane/">here</a>.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Made in Heaven: Divine Spellpack</h1></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Divine_Spellpack</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_divine_spellpack.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>Compatible with Talents of Faerun's sphere system, install this mod before ToF.</td></th>
-    <tr><th>Design Notes</th><td>None.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This installs new spells for clerics and druids.  The new spells will be added to the spell list as the characters level up, just like other spells for these classes.</p>
-  <ul>
-    <h6>First Circle</h6>
-    <li>Striking - Increases an ally's melee damage by +4.</li>
-    <h6>Second Circle</h6>
-    <li>Seeking - Increases an ally's to hit with ranged weapons by +4.</li>
-    <h6>Third Circle</h6>
-    <li>Magic Vestment - Caster gains AC 5 or better.</li>
-    <li>Protection from Cold - Like Protection from Fire, for druids.</li>
-    <li>Oxen Strength - Caster gains +2 or more strength and AC.</li>
-    <h6>Fourth Circle</h6>
-    <li>Sticks to Snakes - Summons giant snakes.</li>
-    <li>Heroism - Like the potion.</li>
-    <li>Repel Insects - Protection from those pesky druid spells.</li>
-    <li>Ice Storm - Same as the wizard version, for druids.</li>
-    <h6>Fifth Circle</h6>
-    <li>Lightning Storm - Strikes all enemies in range with 6d12 lightning.</li>
-    <li>Inferno - Sets an enemy on fire for continuous damage.</li>
-    <li>Break Enchantment - Removes many undesirable conditions from an ally.</li>
-    <li>Hallow - Allies gain +2 attack and damage, other benefits.</li>
-    <li>Unhallow - Evil version of Hallow, for evil priests.</li>
-    <li>Murderous Mist - Druids can summon some Poison Mists.</li>
-    <li>Animal Growth - Gives your animal companions and -summons a boost.</li>
-    <h6>Sixth Circle</h6>
-    <li>Superheroism - Like Heroism but better.</li>
-    <li>Celestial Protection - Immunity to normal weapons.</li>
-    <h6>Seventh Circle</h6>
-    <li>Mass Negative Plane Protection - Protects the entire party.</li>
-    <li>Aura of Vitality - Raises parties str, dex, con by +4.</li>
-    <li>Holly Dart - Deadly dart for druids.</li>
-    <li>Exalted Triad - A spell sequencer for priests.</li>
-  </ul>
-  <p><a href="divine_spell_list.html">Full Divine Spell List</a></p>
-  <p><i>Murderous Mist</i> is an original creation by me.  <i>Striking</i> is a tribute to the Tower of Doom arcade game, and <i>Mass Negative Plane Protection</i> is a wink to the webcomic <a href="https://www.giantitp.com/comics/ootslatest.html">Order of the Stick</a>. All other spells are from the PHB 2e or official FR sourcebooks.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Icewind Dale: Divine Spellpack (CamDawg/DavidW)</h1></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-IWD_Divine_Spells</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#iwdspells_divine.mrk (this version)<br>weidu_external/markers/dw_iwdspells_divine_installed.mrk (any version)</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, EET, BG2, BGT</td></tr>
-    <tr><th>Mod Compatibility</th><td>Same code base as IWDification and SCS, use any of these three.</td></th>
-    <tr><th>Design Notes</th><td>Provided by CamDawg and DavidW. Please report bugs to IWDification.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This installs divine spells from Icewind Dale into BG1/BG2.  This uses the IWDspells libary provided by CamDawg and DavidW, and as such is exactly the same component as found in CamDawg's IWDificiation and DavidW's Sword Coast Stratagems.  If Icewind Dale divine spells from either of these are already installed, this component will do nothing other than print a message.</p>
-  <p>For the spell list, check <a href="https://www.gibberlings3.net/subpages/iwdification/divine/">here</a>.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Planescape Torment: Spellpack</h1></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-PST_Spells</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_pst_spellpack.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues at this time.</td></th>
-    <tr><th>Design Notes</th><td>Mechanus' Cannon has graphical glitches on high resolutions.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component installs a few spells from Planescape Torment.  Currently available are Ball Lightning, Stygian Ice Storm, Deathbolt, Mechanus' Cannon and Rune of Torment.  I may add a few others later on.  All except Ball Lightning are only available in late SoA or ToB.</p>
-  <p>Yes, the over the top PST movies are included.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Made in Heaven: NPC-Exclusive Spells</h1></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-NPC_Spells</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_npc_spells.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues at this time.</td></th>
-    <tr><th>Design Notes</th><td>It's up to you to test Edwin's spells.  He does not fit in my party. ^^</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component adds a few spells that are exclusive to certain party members based on their background and only usable by them.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Improved Paladin Powers <i>(WIP)</i></h1></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Paladin_Powers</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_paladin_powers.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>Untested with the class changes provided by IWDification or Talents of Faerun, but most likely not compatible with either.</td></th>
-    <tr><th>Design Notes</th><td>Really wish it was possible to give paladins a mount.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component revises and extends paladin powers as follows:</p>
-  <ul>
-    <li>Detect Evil is now usable at will.</li>
-    <li>Protection from Evil only affects the paladin and can be used only once per day, but has a greatly extended duration.  At 12th level, it becomes Protection from Evil, 10' Radius</li>
-    <li>All good Paladins except Inquisitors are immune to disease.</li>
-    <li>All good Paladins can cast Divine Favor once per day at level 3.  This extends to twice per day at level 10 and three times per day at level 17.  Divine Favor gives the paladin a small bonus to hit and damage.</li>
-    <li>Paladins, Cavaliers and Inquisitors can Smite Evil once per day.  Undead Hunters can Smite Undead instead, and Blackguards can Smite Good.  The smite deals 1d6 magical damage for every 3 paladin levels.</li>
-    <li>Paladins and Cavaliers gain an extra use of Lay on Hands every 7th level (max. 5 at level 28).</li>
-    <li>Paladins and Cavaliers can Cure Disease once per day starting at 2nd level.  At 6th level they can do this twice per day.</li>
-    <li>The Cavalier's usage of Remove Fear has been reduced to 1/day at level 1, 2/day at level 4 and 3/day at level 7.</li>
-    <li>Undead Hunters can now use Remove Paralysis like the Cavalier can use Remove Fear , at the same rate.</li>
-    <li>All Paladins can start casting divine spells at 4th level.</li>
-    <li>Paladins can opt to gain an extra use of Lay on Hands (if they have it) or Smite Good/Evil/Undead as a high-level ability, up to three times for each.</li>
-    <li>The Cavalier bonus against dragons has been extended to wyverns.</li>
-    <li>All Paladins can achieve mastery (three stars) in "knightly" weapons like longswords, bastard swords, two-handed swords, flails, maces, warhammers and halberds.</li>
-  </ul>
-  <p>This is a work in progress, details may change in future versions.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Improved Ranger Powers <i>(WIP)</i></h1></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Ranger_Powers</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_ranger_powers.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>Untested with the class changes provided by IWDification or Talents of Faerun, but most likely not compatible with either.</td></th>
-    <tr><th>Design Notes</th><td>Gives rangers a separate HP table, mh#hprng.2da, they no longer use hpwar.2da.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component revises and extends ranger powers as follows:</p>
-  <ul>
-    <li>At first level, all Rangers roll 2d8 for HP instead of 1d10.  Existing rangers (i.e. Minsc, Kivan) receive 6 additional hitpoints instead.</li>
-    <li>The use of Charm Animal (for all except Archers) is limited to three times per day at level 5, but the target suffers a -1 penalty on saves for every odd ranger level up to -10 at level 21.</li>
-    <li>Rangers can start casting divine spells at 4th level.</li>
-    <li>Rangers and Stalkers can achieve mastery (three stars) in weapons typically used for dual-wielding like daggers, shortswords, and scimitars, and in all types of bows.  Beast Masters can only gain mastery in all kinds of bows.  The weapon proficiencies for Archers remain unchanged.</li>
-  </ul>
-  <p>This is a work in progress, details may change in future versions.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Improved Monk Powers <i>(WIP)</i></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Monk_Powers</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_monk_powers.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues currently, but might not be compatible with other mods that change monk kits.</td></tr>
-    <tr><th>Design Notes</th><td>Unlike rangers, extra monk HP at first level has no basis in canon.  Sue me.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component revises and extends monk powers as follows:</p>
-  <ul>
-    <li>At first level, all Monks roll 2d6 for HP instead of 1d8.  Existing monks (i.e. Balthasar, Rasaad) get 4 additional hit points instead.</li>
-    <li>Sun Soulray scales to 10d8 instead of 5d8, and deals 2d8 additional damage to undead instead of a flat 6.</li>
-    <li>Sun Soulbeam affects only enemies.</li>
-  </ul>
-  <p>This is a work in progress, details may change in future versions.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Improved Bard Powers <i>(WIP)</i></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Bard_Powers</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_bard_powers.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>Untested with the class changes provided by IWDification or Talents of Faerun, but most likely not compatible with either.</td></th>
-    <tr><th>Design Notes</th><td>Giving bards curative spells was made canon in D&amp;D 3e.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component revises and extends bard powers as follows:</p>
-  <ul>
-    <li>All Bards can cast Friends once per day.</li>
-    <li>All Bards add the following spells to their spell list automatically: Cure Light Wounds, Slow Poison, Cure Disease, Cure Serious Wounds and Cure Critical Wounds.</li>
-  </ul>
-  <p>This is a work in progress, details may change in future versions.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Improved Bhaalspawn Powers <i><i>(EXPERIMENTAL)</i></i></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Bhaalspawn_Powers</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_bhaalspawn_powers.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues currently.</td></tr>
-    <tr><th>Design Notes</th><td>I do not like playing an evil PC.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component enhances and changes the Bhaalspawn powers gained through the course of Baldur's Gate 1.  This is a work in progress and liable to change.  Currently only the 'good' powers are affected.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Specialist Perks <i>(WIP)</i></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Specialist_Perks</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_specialist_perks.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues currently.</td></tr>
-    <tr><th>Design Notes</th><td>Based on optional rules in <i>PO: Spells &amp; Magic.</i></td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component is designed to make specialists a more attractive option, as the loss of an entire school of spells is often quite a high price to pay.</p>
-  <ul>
-    <li>Abjurers: +1 AC and saves versus death at levels 8 and 11, permanent Hold immunity at level 14.</li>
-    <li>Conjurers: Banishment (1/day) at levels 11 and 14. Banishment removes all summoned monsters.</li>
-    <li>Diviners: Find Traps (3/day) at level 11, permanent Non-Detection at level 14.</li>
-    <li>Enchanters: Free Action (1/day) at level 11, permanent Charm immunity at level 14.</li>
-    <li>Illusionists: Invisibility (1/day) at level 8, Detect Illusion (1/day) at level 11 and 14.</li>
-    <li>Invokers: +10% elemental resistance and elemental damage boost at levels 8, 11 and 14.</li>
-    <li>Necromancers: Summon Ghast (1/day) at level 11, Negative Plane Protection (1/day) at level 14.</li>
-    <li>Transmuters: +1 on saves versus petrification/polymorph at levels 8, 11 and 14.</li>
-  </ul>
-  <p>This is a work in progress, details may change in future versions.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Epic Spellpack <i>(WIP)</i></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Epic_Spellpack</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_epic_spellpack.mrk</td></tr>
-    <tr><th>Target Games</th><td>BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues currently.</td></tr>
-    <tr><th>Design Notes</th><td><i>Magic Missile Storm</i> is not canon, all others are.</i></td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component installs several new high-level abilities for both arcane- and divine casters.</p>
-  <p>IMPORTANT: Currently the spells are installed as innate abilities, like the SCS component 'HLAs as Innate Abilities'.</p>
-  <p>The following are currently available.</p>
-  <ul>
-    <h6>Epic Spells (arcane)</h6>
-    <li>Algarth's Embattlement - Epic spell sequencer.</li>
-    <li>Elminster's Effulgent Epuration - Epic spell deflection.</li>
-    <li>Ioulam's Longevity - Wizard drains life from all enemies.</li>
-    <li>Magic Missile Storm - Pelts an enemy with waves of magic missiles.</li>
-    <li>Nazzer's Nullification - Cancels all magical effects.</li>
-    <li>Tolodine's Killing Wind - Cloudkill's big brother.</li>
-    <h6>Non-Spell HLAs (arcane)</h6>
-    <li>Arcane Insight - Permanently gain +1 int, +1 casting speed and +5 magic resistance.  Can be taken up to 3 times.</li>
-    <li>Chosen of Mystra - Constitution set to 25, immunity to disease and disintegrate.  (Good/neutral single class wizards only, must be level 25+.)</li>
-    <li>Silver Fire - Stream of silver fire deals magical damage.  Can be taken up to 3 times. (Chosen of Mystra only.)</li>
-    <li>Extra 9th Level Spell Slot - Exactly what it says on the tin.</li>
-    <h6>Quest Spells (divine)</h6>
-    <li>Health Blessing - Poison/disease immunity and Regeneration on entire party.</li>
-    <li>Interdiction - +1 AC and +2 saves on party, opposite on enemies.  Can be combined with Chant, Prayer and Recitation.</li>
-    <li>Wolf Spirits - Druid conjures a powerful pack of spirit wolves.</li>
-    <h6>Non-Spell HLAs (divine)</h6>
-    <li>Divine Insight - Permanently gain +1 wis, +1 casting speed and +5 magic resistance.  Can be taken up to 3 times.</li>
-  </ul>
-  <p><a href="epic_spell_list.html">Full Epic Spell List</a></p>
-  <p>This is still a work in progress and may change in the future.</p>
-
-</td></tr></table>
-
-  <h3>Spell Effect Tweaks</h3>
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Nerf Sleep Spell</th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Nerf_Sleep_Spell</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#nerf_sleep_spell.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues currently.</td></tr>
-    <tr><th>Design Notes</th><td>Tarnesh is evil incarnate, especially wtith SCS.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component nerfs the duration of the <i>Sleep</i> spell to a maximum of five rounds.  This was mostly out of frustration for having to wait for half my party to wake up after the Tarnesh battle at the FAI.  Five rounds is already a heck of a long time in combat, five rounds per level is just pure overkill.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Deeper Fear</th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Deeper_Fear></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_deeper_fear.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>Cloak of Bravery is correctly reported to ToF's sphere system.<br>The change in working of <i>Remove Fear</i> may have some minor effect on SCS scripting.</td></tr>
-    <tr><th>Design Notes</th><td>This is almost a restoration.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component aims to make magical fear slightly more difficult to deal with and restore the purpose of the wizard's <i>Resist Fear</i> spell by nerfing the cleric's and cavalier's <i>Remove Fear</i> spells to only, well, remove existing fear effects.  In return, clerics (and paladins) get access to <i>Cloak of Bravery</i>, a fourth circle spell that does what <i>Remove Fear</i> does now.</p>
-  <p>There is an indication that this was how the <i>Remove Fear</i> spell was actually supposed to work, and it is in line with its P&amp;P counterpart.  Also noteworthy is that <i>Horror</i> is actually non-canon, the P&amp;P spell <i>Fear</i> is 4th circle just like the clerical <i>Cloak of Fear</i>.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>True Meteor Swarm <i>(EXPERIMENTAL)</i></th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-True_Meteor_Swarm</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_meteor_swarm.mrk</td></tr>
-    <tr><th>Target Games</th><td>BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues currently.</td></tr>
-    <tr><th>Design Notes</th><td>Gimme my fiery explosions, damn it!</i></td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component will introduce the true Meteor Swarm spell as described in the 2e Player's Handbook; four 10d4 fireballs the caster can launch at up to four targets.  The existing Meteor Swarm spell will be renamed to Rain of Destruction.  The new spell scroll is available from the Arcana Archives.  Enemies will keep using the old spell, and it will remain available to players too.</p>
-  <p>This is still a work in progress and may change.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Prevent Damage during Time Stop</th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-No_Damage_Timestop</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#prevent_timestop_damage.mrk</td></tr>
-    <tr><th>Target Games</th><td>BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>If you are using SCS mage AI, you may want to activate its no melee during Time Stop option, see the readme of that mod.</td></tr>
-    <tr><th>Design Notes</th><td>Time Stop melee is cheap.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component makes it impossible to deal damage to time-stopped creatures, they will be 100% resistant to everything.  This is mostly to prevent the incredibly cheap Time Stop melee tactic.</p>
-  <p>This is also in line with the 3e version of <i>Time Stop</i>, where it can only be used to buy the caster a few rounds of preparation.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Remove All Time Stop Immunity</th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-No_Timestop_Immunity</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#remove_timestop_immunity.mrk</td></tr>
-    <tr><th>Target Games</th><td>BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>If you are using SCS mage AI, you may want to activate its no melee during Time Stop option, see the readme of that mod.</td></tr>
-    <tr><th>Design Notes</th><td>Time Stop melee is cheap.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This tweak will remove immunity to Time Stop from all creatures.  Casters remain of course immune to their own Time Stop spells.  It is designed to complement the previous tweak.</p>
-  <p>There is absolutely no canon base for this immunity, it seems completely arbitrary and makes no sense considering how the spell is supposed to work.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Spell Improvements</th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Spell_Improvements</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#spell_improvements.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>Untested (that I am aware of) but most likely not compatible with Spell Revisions and Spell Revisions Revised.<br>No conflicts with SCS spell tweaks, the two complement each other.</td></tr>
-    <tr><th>Design Notes</th><td>The tweak to PfNM is actually canon.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This is a collection of minor tweaks to various spells.  Others may be added in the future as I feel like it.</p>
-  <ul>
-  <li>Protection from Normal Missiles: In addition to its usual effects, this spell will now reduce missile damage to the recipient by 50%.</li>
-  <li>Wyvern Call: The wyvern called will now be an 11 HD greater wyvern similar to those encountered in Durlag's Tower.  Very high-level casters will call up to three wyverns.</li>
-  <li>Magical Stone: The stone deals double damage to undead (as per P&amp;P) and the priest gets an additional stone at levels 4 and 7.</li>
-  <li>Shillelagh: The Shillelagh is treated as a magical club with a +1 enhancement bonus and no penalty for non-proficiency.</li>
-  <li>Barkskin: If the recipient already has a better armor class than what the spell gives, they will still get an AC bonus of +1 to +5.</li>
-  <li>Flame Blade: The flaming sword is treated as a magical scimitar with no penalty for non-proficiency.  It can strike any target not immune to fire with a +4 to hit and deals 1d8 points of fire damage, +1 for every two levels.  Strength does not apply.</li>
-  </ul>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Revised Spell Learning XP</th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Revised_Spell_Learning_XP</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#spell_learning_xp.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>If you combine this with other tweaks that have similar functionality, the last one installed wins.</td></tr>
-    <tr><th>Design Notes</th><td>This is practically the same as the old BGT Tweaks component.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This small component revises the experience gained from writing new spells to the spellbook to more sane values, making it actually worth doing in BG1 while toning down the ridiculous values in BG2.  This is similar to the component from BGT Tweaks.  The XP gains are as follows: 50/100/200/500/1000/2000/3000/4000/5000.</p>
-</td></tr></table>
-
-  <h3>Spell Availability Tweaks</h3>
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Expanded Temple Services</th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-Expanded_Temples</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_expanded_temples.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues.</td></tr>
-    <tr><th>Design Notes</th><td>None.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>This component expands the services of all temples in the game.  You can now purchase the spells Cure Disease and Restoration at most temples.  If you installed Spell Restorations from MiH F&amp;R, Cure Blindness/Deafness will be available as well, and if you installed the Divine Spellpack from this mod, Break Enchantment will also be added.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Sixth Circle Spell Scrolls in Siege of Dragonspear</th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-SoD_6th_Level_Spells</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_level_6_spells_sod.mrk</td></tr>
-    <tr><th>Target Games</th><td>SoD</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues.</td></tr>
-    <tr><th>Design Notes</th><td>None.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>Five sixths circle spells were actually in Tales of the Sword Coast, although not usable by the player: Invisible Stalker, Globe of Invulnerability, Tenser's Transformation, Flesh to Stone and Death Spell.  Now that Siege of Dragonspear extends the story, it seems only fair to let the player actually have these spells.</p>
-  <p>This will be most helpful if you have a mod that removes the XP cap so your wizard actually can reach level twelve and have a sixth circle spell slot, but even if not they can still use the scrolls.  One copy of each is available at the Sorcerous Sundries (only after SoD starts), and at quartermaster Belegarm in the camp.</p>
-</td></tr></table>
-
-  <table style="width:60%">
-    <tr><th colspan=2><h1>Fourth level Animate Dead for Wizards</th></tr>
-    <tr><th>Component Label</th><td>MH#-MiH_SP-4th_Level_Animate_Dead</td></tr>
-    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_animate_dead.mrk</td></tr>
-    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
-    <tr><th>Mod Compatibility</th><td>No known issues.</td></tr>
-    <tr><th>Design Notes</th><td>None.</td></th>
-    <tr><th>Description</th>
-<td>
-  <p>There's a huge gap between when clerics get Animate Dead and when wizards do, and for a 5th circle spell is is unimpressive.  In D&amp;D 3e, this spell is moved to the fourth circle, this modification implements that same change.</p>
-  <p>The fifth circle spell is renamed <i>Dance Macabre</i> and now summons ghouls instead, and a new fourth circle <i>Animate Dead</i> is now available to wizards, sorcerers and bards.</p>
-</td></tr></table>
-
-<h2>Expert Configuration Options</h2>
-<div class="section">
-  <p>Within the mod folder, there is a file called mih_sp.ini.  This file can be used to fine-tune certain aspects of this mod.  It is meant as an expert option; for normal installation you can leave this file as it is.  If you do edit this file, you must reinstall the mod, or at least the components for which you changed settings.</p>
-  <p>Which spells get installed by the spell packs is determined by the file tables/spells.2da in the subdir folders of the components.  It is possible to add your own spells here.  The spell file goes in the subdir spells and the icons go into graphics.  There are other similar tables that control the installation of things like summoned creatures and simple items like paws.  You can also delete a spell you really don't like here, but this may have unexpected results down the line so be careful.</p>
+  <h3>#4 - Planescape Torment Spellpack</h3>
+  <p>Adds a selection of spells adapted from Planescape: Torment, including Ball Lightning, Stygian Ice Storm, Deathbolt, Mechanus' Cannon and Rune of Torment.</p>
 </div>
-<h2>Contact Information</h2>
+
+<h2>Configuration</h2>
 <div class="section">
-  <p><a href="http://gibberlings3.net/forums/index.php?showuser=6180">Angel</a> created this mod. You can find out more about Made in Heaven: Spell Pack by asking nicely. Visit the <a href="http://gibberlings3.net/forums/">Gibberlings Three Forums</a> for information on this and any other Gibberlings Three mods on which I may be working. </p>
+  <p>The remaining relevant expert options are stored in <code>mih_sp/mih_sp.ini</code>. Options belonging only to components excluded from the Lite build have been removed from the Lite metadata file.</p>
 </div>
-<h2>Shout Outs</h2>
+
+<h2>Credits</h2>
 <div class="section">
-  <p><strong>Tools Used in Creation</strong><br/>
-    <a href="http://www.weidu.org/"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a> by Wes Weimer, the bigg, and Wisp<br/>
-    <a href="https://www.gibberlings3.net/mods/tools/dltcep/"><acronym title="DragonLance Total Converter Editor Pro">DLTCEP</acronym></a> by Avenger</p>
-    <a href="http://www.shsforums.net/files/file/837-bam-batcher/">BAM Batcher</a> by Miloch</p>
-  <p><strong>People who Contributed in some way</strong><br/>
-    Weimar and Wisp, for creating and maintaining WeiDU.<br/>
-    DavidW, for both the SFO- and the IWDspells libraries used by this mod.<br/>
-    CamDawg, for the IWDspells library and being a generally supportive guy.<br/>
-    kjeron, who provided the projectile for Scintilliating Sphere.<br/>
-    Zenblack, who graciously provided most of the spell icons.<br/>
-    All people brave enough to try and install my early beta versions...<br/>
-    The people at Bioware and Beamdog, for creating respectively the original games and the Enhanced Editions in the first place.<br/>
-    Anyone else I forgot?  (Please let me know!)</p>
+  <p>Angel created the original Made in Heaven - Spell Pack and its spell content. DavidW, CamDawg, kjeron, Zenblack and the other upstream contributors retain their original credits. The Lite fork only reduces the exposed component set and carries the custom Infinity UI++ compatibility work.</p>
 </div>
-<h2>Credits and Copyright Information</h2>
-<div class="section">
-  <p>This mod has been released under the GNU General Public License, version 3.0 or higher.  This means you can copy, share, alter and distribute this mod freely, as long as you do so under the same license.  For exact terms, read the LICENSE file in the mod folder.</p>
-  <p>This mod is not distributed or endorsed by Wizard of the Coast.  However, it follows the guidelines given by Wizards of the Coast for including their intellectual property in fan content.  The author of this mod makes no gain, monetary or otherwise, from its distribution.  The GPL license ensures the content of this mod will always be free for anyone, including Wizards of the Coast, to examine.</p>
-</div>
+
 <h2>Version History</h2>
 <div class="section">
-  <h5>Version 9 - ???</h5>
-  <h5>Version 8 - May 31 2026</h5>
+  <h5>v9-lite-iui-fix2 - September 30 2026</h5>
   <ul>
-    <li>Bug fix release, thanks to testing by Lumorus and others on G3.</li>
-    <li>Marked Time Stop tweaks as a work in progress.</li>
-    <li>Replaced Web of Lightning with Lightning Ring.</li>
-    <li>Updated several icons, thanks to Zenblack.</li>
+    <li>Renamed the custom fork to Made in Heaven - Spell Pack Lite.</li>
+    <li>Kept only Arcane Spellpack (#0), Divine Spellpack (#2) and Planescape Torment Spellpack (#4).</li>
+    <li>Preserved original WeiDU component IDs for compatibility.</li>
+    <li>Includes the Infinity UI++ SFO class/kit metadata filtering fix.</li>
   </ul>
-  <h5>Version 7 - December 27 2025</h5>
-  <ul>
-    <li>Added fourth level Animate Dead for Wizards availability tweak.</li>
-    <li>All spells now have proper icons thanks to Zenblack.</li>
-    <li>Added new Ranger Powers component.</li>
-    <li>Added new Monk Powers component.</li>
-    <li>Added IWD Arcane/Divine spell components.</li>
-    <li>Split off PST spells into their own component.</li>
-    <li>Lots of code changes under the hood to upgrad to new SFO v2.</li>
-    <li>Renamed/removed some spells and tweaks that clash with SCS or ToF.</li>
-    <li>Removed forced spell renaming from lore changes.</li>
-    <li>Removed experimental components that just weren't working out.</li>
-    <li>Massive updates to the readme (this file!)</li>
-  </ul>
-  <h5>Version 6 - December 18 2022</h5>
-  <ul>
-    <li>Fixed a loooot of bugs and added several new spells.</li>
-    <li>Documented new paladin powers better, added note about other mods</li>
-    <li>Integrated Thalatyr the *Conjurer* with lore-friendly changes</li>
-    <li>Various versions of (Super)Heroism won't stack, for real this time (I hope)</li>
-    <li>Added new component Bard Powers</li>
-    <li>Moved Spell Restorations to new mod Fixes &amp; Restorations</li>
-  </ul>
-  <h5>Version 5 - October 18 2021</h5>
-  <ul>
-    <li>Added missing icon for Tattoos of Power</li>
-    <li>Added missing graphics for Evard's Black Tentacles</li>
-    <li>Fixed erroneous strings in Tattoos of Power and Spell Matrix on BG2(EE)</li>
-    <li>Made Heroism and Superheroism not cumulative with each other</li>
-    <li>Readme updates, clearly marked experimental components</li>
-  </ul>
-  <h5>Version 4 - August 2021</h5>
-  <ul>
-    <li>Finally fixed the issue with Spell Matrix and area effect spells</li>
-    <li>Damage spells use proper save for half damage mechanics in EE games</li>
-    <li>Added a few experimental epic spells and other high-level abilities</li>
-    <li>Paladins can start casting spells at level 4 (as per 3.5e rules)</li>
-    <li>Bug fixes and code improvements</li>
-  </ul>
-  <h5>Version 3 - October 2020</h5>
-  <ul>
-    <li>Fixes to make mod work with WeiDU 247</li>
-    <li>Several new tweaks</li>
-    <li>Rudimentary graphics for Evard's Black Tentacles</li>
-    <li>Bug fixes and code improvements</li>
-  </ul>
-  <h5>Version 2 - May 2020</h5>
-  <ul>
-    <li>Almost complete rewrite using DavidW's SFO library.</li>
-    <li>Added some new spells and a couple of tweaks.</li>
-    <li>Some bug fixes and balancing tweaks.</li>
-  </ul>
-  <h5>Version 1 - June 2019</h5>
-  <ul>
-    <li>First public release.</li>
-  </ul>
+  <p>For the upstream history before the Lite fork, see the project repository and the original Made in Heaven - Spell Pack history.</p>
 </div>
 </body>
 </html>
-
-

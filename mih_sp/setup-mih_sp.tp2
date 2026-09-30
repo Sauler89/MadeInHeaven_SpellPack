@@ -1,12 +1,12 @@
-// Made in Heaven - Spell Pack
+// Made in Heaven - Spell Pack Lite
 //
 // Personal three-component build
 // WeiDU installer
 
 BACKUP "weidu_external/backup/mih_sp"
 
-SUPPORT "https://www.gibberlings3.net/forums/topic/29992-my-new-made-in-heaven-mods/"
-VERSION "v9-personal-3components-iui-fix2"
+SUPPORT "https://github.com/Sauler89/MadeInHeaven_SpellPack/issues"
+VERSION "v9-lite-iui-fix2"
 
 //MODDER setup_tra none area_variables warn missing_extern warn missing_resref warn ict2_actions none missing_eval none overwriting_file none fun_args warn
 
