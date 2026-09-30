@@ -10,32 +10,30 @@ sources, with a few more original creations.
 
 ## Component list
 
-- Arcane Spellpack  - Original wizard/sorcerer/bard spells by me.
-- IWD Arcane Spells - Arcane spells from Icewind Dale, by CamDawg and DavidW.
-- Divine Spellpack  - Original cleric/druid/shaman spells by me.
-- IWD Divine Spells - Divine spells from Icewind Dale, by CamDawg and DavidW.
+This fork intentionally exposes only the three spell-pack components used by the custom build:
+
+- Arcane Spellpack  - Original wizard/sorcerer/bard spells by Angel.
+- Divine Spellpack  - Original cleric/druid/shaman spells by Angel.
 - PST Spellpack     - Introduces a handful of spells from Planescape Torment.
-- NPC-Exclusive Spells   - Gives certain party members unique spells.
 
-- Revised Paladin Powers - New powers and revised existing powers for paladins.
-- Revised Ranger Powers  - New powers and revised existing powers for rangers.
-- Revised Monk Powers    - New powers and revised existing powers for monks.
-- Revised Bard Powers    - New powers and revised existing powers for bards.
-- Revised Bhaalspawn Powers - New powers and revised powers for Charname.
-- Specialist Perks       - Gives specialist wizards more than just spell slots.
+The original WeiDU component numbers are preserved for compatibility with existing installs and WeiDU logs:
 
-- Reduce Sleep duration to five rounds
-- Deeper Fear   - Makes magical fear a little tougher to deal with.
-- Spell Improvement - A collection of small tweaks to existing spells.
-- Revised Spell Learning XP - A revival of a classic tweak from BGT Tweaks.
-- Expanded Temple Services  - Makes more cures and stuff available.
-- Sixth level spell scrolls in SoD
-- Fourth level Animate Dead for wizards
+- #0 Arcane Spellpack
+- #2 Divine Spellpack
+- #4 PST Spellpack
+
+This build also includes the Infinity UI++ compatibility fix that filters SFO class/kit metadata from Infinity UI++ class-level helper functions.
 
 For detailed descriptions, please check the docs directory.
 
 
 ## Version History
+
+v9-personal-3components-iui-fix2 - September 30 2026
+- Custom three-component fork: Arcane Spellpack, Divine Spellpack, PST Spellpack only.
+- Preserved original WeiDU component IDs #0, #2 and #4.
+- Added Infinity UI++ compatibility filtering for SFO {K=...,C=...} class/kit metadata.
+
 
 Version 9 - ???
 

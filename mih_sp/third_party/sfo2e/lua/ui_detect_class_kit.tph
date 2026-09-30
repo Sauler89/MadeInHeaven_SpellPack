@@ -368,6 +368,19 @@ BEGIN
 		END
 
 	
+		// Infinity UI++ compatibility (Sauler89 custom build)
+		// SFO stores {K=...,C=...} metadata in class/kit strings. Infinity UI++
+		// reads classlevel.*.details directly in these helper functions, so filter
+		// the metadata before Infinity UI++ parses class names and levels.
+		// The exact-match replacements are idempotent.
+		REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH "rgClass = ',' .. characters[currentID].classlevel.first.details" "rgClass = ',' .. dwFilterKitDesc(characters[currentID].classlevel.first.details)"
+		REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH "rgClass = ',' .. characters[currentID].classlevel.second.details" "rgClass = ',' .. dwFilterKitDesc(characters[currentID].classlevel.second.details)"
+		REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH "rgClass = ',' .. characters[currentID].classlevel.third.details" "rgClass = ',' .. dwFilterKitDesc(characters[currentID].classlevel.third.details)"
+		REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH "rgLevel = string.match(characters[currentID].classlevel.first.details, '%d.')" "rgLevel = string.match(dwFilterKitDesc(characters[currentID].classlevel.first.details), '%d.')"
+		REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH "rgLevel = string.match(characters[currentID].classlevel.second.details, '%d.')" "rgLevel = string.match(dwFilterKitDesc(characters[currentID].classlevel.second.details), '%d.')"
+		REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH "rgLevel = string.match(characters[currentID].classlevel.third.details, '%d.')" "rgLevel = string.match(dwFilterKitDesc(characters[currentID].classlevel.third.details), '%d.')"
+
+
 END
 
 DEFINE_ACTION_FUNCTION patch_character_screen_display_old//internal 

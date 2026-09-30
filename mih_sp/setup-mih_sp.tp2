@@ -1,11 +1,12 @@
 // Made in Heaven - Spell Pack
 //
+// Personal three-component build
 // WeiDU installer
 
 BACKUP "weidu_external/backup/mih_sp"
 
 SUPPORT "https://www.gibberlings3.net/forums/topic/29992-my-new-made-in-heaven-mods/"
-VERSION "v9"
+VERSION "v9-personal-3components-iui-fix2"
 
 //MODDER setup_tra none area_variables warn missing_extern warn missing_resref warn ict2_actions none missing_eval none overwriting_file none fun_args warn
 
@@ -25,8 +26,9 @@ LANGUAGE "English"
 
 
 // Made in Heaven: Arcane Spellpack
+// Keep original component number #0 for upgrade / WeiDU.log compatibility.
 
-BEGIN @1 
+BEGIN @1 DESIGNATED 0
 
 LABEL MH#-MiH_SP-Arcane_Spellpack
 
@@ -39,24 +41,10 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// Icewind Dale: Arcane Spellpack
-
-BEGIN @20
-
-LABEL MH#-MiH_SP-IWD_Arcane_Spells
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "iwdspells_arcane"
-  location	= "third_party/iwdspells"
-END
-
-
 // Made in Heaven: Divine Spellpack
+// Keep original component number #2.
 
-BEGIN @2 
+BEGIN @2 DESIGNATED 2
 
 LABEL MH#-MiH_SP-Divine_Spellpack
 
@@ -69,24 +57,10 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// Icewind Dale: Divine Spellpack
-
-BEGIN @21
-
-LABEL MH#-MiH_SP-IWD_Divine_Spells
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "iwdspells_divine"
-  location	= "third_party/iwdspells"
-END
-
-
 // Planescape Torment: Spellpack
+// Keep original component number #4.
 
-BEGIN @18
+BEGIN @18 DESIGNATED 4
 
 LABEL MH#-MiH_SP-PST_Spells
 
@@ -97,293 +71,3 @@ LAUNCH_ACTION_FUNCTION run
   file		= "setup_pst_spellpack"
   location	= "pst_spellpack"
 END
-
-
-// Made in Heaven: Paladin Powers Pack
-
-BEGIN @3 
-
-LABEL MH#-MiH_SP-Paladin_Powers
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_paladin_powers"
-  location	= "paladin"
-END
-
-
-// Made in Heaven: Ranger Powers Pack
-
-BEGIN @19 
-
-LABEL MH#-MiH_SP-Ranger_Powers
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_ranger_powers"
-  location	= "ranger"
-END
-
-
-// Made in Heaven: Monk Powers Pack
-
-BEGIN @25 
-
-LABEL MH#-MiH_SP-Monk_Powers
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_monk_powers"
-  location	= "monk"
-END
-
-
-// Made in Heaven: Bard Powers Pack
-
-BEGIN @16 
-
-LABEL MH#-MiH_SP-Bard_Powers
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_bard_powers"
-  location	= "bard"
-END
-
-
-// Made in Heaven: Bhaalspawn Powers Pack
-
-BEGIN @17 
-
-LABEL MH#-MiH_SP-Bhaalspawn_Powers
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_bhaalspawn_powers"
-  location	= "bhaalspawn"
-END
-
-
-// Made in Heaven: Specialist Perks
-
-BEGIN @4 
-
-LABEL MH#-MiH_SP-Specialist_Perks
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_specialist_perks"
-  location	= "specialist"
-END
-
-
-// Made in Heaven: Exclusive NPC Spells
-//
-// Moved here to let cloned NPC kits profit from
-// specialist perks.
-
-BEGIN @27
-
-LABEL MH#-MiH_SP-NPC_Spells
-
-REQUIRE_PREDICATE GAME_IS "bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_npc_spells"
-  location	= "npc_spells"
-END
-
-
-// Made in Heaven: Epic Spellpack
-//
-// NB: Moved here to have a better chance of having consistent
-// paladin innates between BG1 and BG2.
-
-BEGIN @7
-
-LABEL MH#-MiH_SP-Epic_Spellpack
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_epic_spellpack"
-  location	= "epic_spellpack"
-END
-
-
-// Nerf Sleep Spell
-
-BEGIN @22
-GROUP @5
-
-LABEL mh#-MiH_SP-Nerf_Sleep_Spell
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "nerf_sleep_spell"
-  tra		= "spell_tweaks"
-  location	= "tweaks"
-END
-
-
-// Deeper Fear
-
-BEGIN @24
-GROUP @5
-
-LABEL mh#-MiH_SP-Deeper_Fear
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_deeper_fear"
-  location	= "deeper_fear"
-END
-
-
-// True Meteor Swarm
-
-BEGIN @26
-GROUP @5
-
-LABEL MH#-MiH_SP-True_Meteor_Swarm
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_meteor_swarm"
-  location	= "meteor_swarm"
-END
-
-
-// Prevent damage during Timestop
-
-BEGIN @9
-GROUP @5
-
-LABEL MH#-MiH_SP-No_Damage_Timestop
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "prevent_timestop_damage"
-  location	= "tweaks"
-END
-
-
-// Remove All Time Stop Immunity
-
-BEGIN @11
-GROUP @5
-
-LABEL MH#-MiH_SP-No_Timestop_Immunity
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "remove_timestop_immunity"
-  location	= "tweaks"
-END
-
-
-// Spell Improvements
-
-BEGIN @13
-GROUP @5
-
-LABEL MH#-MiH_SP-Spell_Improvements
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "spell_improvements"
-  tra		= "spell_tweaks"
-  location	= "tweaks"
-END
-
-
-// Revised Spell Learning XP
-
-BEGIN @8
-GROUP @15
-
-LABEL MH#-MiH_SP-Revised_Spell_Learning_XP
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "spell_learning_xp"
-  location	= "tweaks"
-END
-
-
-// Expanded Temples
-
-BEGIN @14
-GROUP @15
-
-LABEL MH#-MiH_SP-Expanded_Temples
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_expanded_temples"
-  location	= "expanded_temples"
-END
-
-
-// Sixth Circle Spell Scrolls in Siege of Dragonspear
-
-BEGIN @23
-GROUP @15
-
-LABEL MH#-MiH_SP-SoD_6th_Level_Spells
-
-REQUIRE_PREDICATE GAME_INCLUDES "sod" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "level_6_spells_sod"
-  location	= "tweaks"
-END
-
-
-// Fourth level Animate Dead for Wizards
-
-BEGIN @12
-GROUP @15
-
-LABEL MH#-MiH_SP-4th_Level_Animate_Dead
-
-REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @10
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_animate_dead"
-  location	= "animate_dead"
-END
-
-
