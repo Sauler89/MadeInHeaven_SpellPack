@@ -92,7 +92,10 @@ DEFINE_PATCH_FUNCTION ui_on_open_patch//internal
 BEGIN
 
 	READ_ASCII 0x0 data (BUFFER_LENGTH)
-	REPLACE_EVALUATE CASE_INSENSITIVE ~[ %TAB%]*\(onopen\)[^"]*"\([^"]*\)"~ BEGIN
+	// Infinity UI++ compatibility: only match an actual onOpen field at the start of a UI.MENU line.
+// The previous unanchored pattern could match "onopen" inside menu contents and export UI syntax
+// into M_DW_OOD.lua, producing invalid Lua and a broken dwOnOpen token in UI.MENU.
+REPLACE_EVALUATE CASE_INSENSITIVE ~^[ %TAB%]*\(onopen\)[^"]*"\([^"]*\)"~ BEGIN
 		SPRINT on_open_contents "%MATCH2%"
 	END
 	~%TAB%%MATCH1%%WNL%%TAB%"%WNL%%TAB%%TAB%dwOnOpen('%on_open_object%')%WNL%%TAB%"%WNL%~
